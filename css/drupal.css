@@ -1,0 +1,43 @@
+#first-time h1 {
+  font-size: 190%;
+  margin: 0 0 20px 0;
+}
+
+.topsearch > form {
+  float: left;
+}
+
+.sidebar {
+  margin-top: 5px;
+}
+
+.nodes ul.primary {
+  margin-top: 0;
+}
+
+.nodefoot {
+  border-top: 1px dashed #000;
+  padding-top: 5px;
+}
+
+.block li {
+  font-size: 10pt;
+}
+
+#footer {
+  text-align: center;
+}
+
+#footer .container {
+  text-align: right;
+}
+
+#footer .block {
+  border-top: none;
+}
+
+.pagehead > ul.tabs li a.active {
+    color:#000;
+    border-bottom: 2px solid #CC6A00;
+}
+
