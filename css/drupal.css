@@ -36,6 +36,10 @@
   font-size: 10pt;
 }
 
+#nodes .list.admin {
+  width: 100%;
+}
+
 #footer {
   text-align: center;
 }

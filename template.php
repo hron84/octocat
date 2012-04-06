@@ -28,6 +28,13 @@ function octocat_preprocess_page(&$vars) {
     $alt = t("@user's picture", array('@user' => $user->name ? $user->name : variable_get('anonymous', t('Anonymous'))));
     $vars['user_picture'] = theme('image', $picture, $alt, $alt, array('width' => 20, 'height' => 20), FALSE);
   } 
+
+  $vars['is_admin_page'] = preg_match('/^admin/', $_GET['q']);
+
+  if($_GET['q'] == 'admin/build/block') {
+    $vars['is_admin_page'] = 0;
+  }
+
 }
 
 function octocat_preprocess_comment(&$vars) {

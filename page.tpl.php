@@ -63,11 +63,11 @@
           <?php print theme('links', menu_primary_links(), array('class' => 'tabs')); ?>
         </div>
         <div id="nodes" class="nodes">
-          <div class="list">
+        <div class="list <?php print $is_admin_page ? " admin": "" ?>">
             <?php if(!empty($tabs)) print $tabs ?>
             <?php if(!empty($content)) print $content ?>
           </div>
-          <?php if(!empty($right)): ?>
+          <?php if(!$is_admin_page && !empty($right)): ?>
           <div class="sidebar">
             <?php print $right ?>
           </div>
