@@ -20,6 +20,15 @@
   padding-top: 5px;
 }
 
+.nodefoot .terms {
+    background: url(../images/icons/tags.png) no-repeat;
+    padding-left: 16px;
+}
+
+.nodefoot > ul.links {
+    padding-left: 16px;
+}
+
 .block li {
   font-size: 10pt;
 }

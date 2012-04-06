@@ -12,6 +12,9 @@
               </div>
               <?php print $content ?>
               <div class="nodefoot">
+                <?php if($terms): ?>
+                <div class="terms"><?php print $terms ?></div>
+                <?php endif; ?>
                 <?php print $links; ?>
               </div>
             </div>
