@@ -385,6 +385,90 @@ p.message.hidden {
     padding-left: 25px;
 }
 
+.comment {
+    border: 1px solid #CACACA;
+    margin: 10px 0;
+}
+
+.comment .cmeta {
+    background: -moz-linear-gradient(#F8F8F8, #E1E1E1) repeat scroll 0 0 transparent;
+    background: -webkit-linear-gradient(#F8F8F8, #E1E1E1) repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #CCCCCC;
+    height: 33px;
+    padding: 0 10px;
+}
+
+.comment .cmeta p.author {
+    float: left;
+    font-size: 12px;
+    height: 33px;
+    line-height: 33px;
+    margin: 0;
+    max-width: 600px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.7);
+    white-space: nowrap;
+}
+
+.comment .cmeta .avatar {
+    background: #FFFFFF;
+    border: 1px solid #C8C8C8;
+    display: inline-block;
+    font-size: 1px;
+    line-height: 1px;
+    margin-right: 3px;
+    margin-top: -2px;
+    padding: 1px;
+    vertical-align: middle;
+}
+
+.comment .cmeta p.author a {
+    color: #222222;
+}
+
+.comment .cmeta p.author em a,
+.comment .cmeta em.date a em {
+    color: #666666;
+    font-style: normal;
+}
+
+.comment .cmeta p.submitted {
+    float: right;
+    font-size: 11px;
+    height: 33px;
+    line-height: 33px;
+    margin: 0;
+}
+
+.comment .cmeta p.submitted em.date {
+    line-height: 33px;
+    color: #777777;
+    display: inline;
+    font-style: normal;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.comment .body {
+    background: none repeat scroll 0 0 #FBFBFB;
+    color: #333333;
+    font-size: 13px;
+    padding: 10px;
+    position: relative;
+}
+
+.comment .body p {
+    margin-bottom: 10px;
+}
+.comment .cfoot {
+    background: -moz-linear-gradient(#F8F8F8, #E1E1E1) repeat scroll 0 0 transparent;
+    background: -webkit-linear-gradient(#F8F8F8, #E1E1E1) repeat scroll 0 0 transparent;
+    border-top: 1px solid #CCCCCC;
+    height: 24px;
+    padding: 0 10px;
+    text-align: right;
+}
+
 .block {
     border-top: 2px solid #EEEEEE;
     margin-top: 0.75em;

@@ -29,3 +29,18 @@ function octocat_preprocess_page(&$vars) {
     $vars['user_picture'] = theme('image', $picture, $alt, $alt, array('width' => 20, 'height' => 20), FALSE);
   } 
 }
+
+function octocat_preprocess_comment(&$vars) {
+  $comment = $vars['comment'];
+  $account = user_load($comment->uid);
+
+  $ago = time() - $comment->timestamp;
+  $vars['ago'] = t('%ago ago', array('%ago' => format_interval($ago)));
+
+  $picture = _octocat_get_user_picture($account);
+
+  if(isset($picture)) {
+    $alt = t("@user's picture", array('@user' => $account->name ? $account->name : variable_get('anonymous', t('Anonymous'))));
+    $vars['picture'] = theme('image', $picture, $alt, $alt, array('width' => 20, 'height' => 20), FALSE);
+  } 
+}
