@@ -57,10 +57,10 @@
     <div class="site">
       <div class="container">
         <div class="pagehead dashboard">
+          <?php print theme('links', menu_primary_links(), array('class' => 'tabs')); ?>
           <?php if(isset($header)) print $header; ?>
           <?php #print_r($user); ?>
           <?php if ($show_messages && $messages) print $messages; ?>
-          <?php print theme('links', menu_primary_links(), array('class' => 'tabs')); ?>
         </div>
         <div id="nodes" class="nodes">
         <div class="list <?php print $is_admin_page ? " admin": "" ?>">

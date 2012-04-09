@@ -285,6 +285,7 @@ p.message.hidden {
     background: -moz-linear-gradient(center top , #FAFAFA, #E4E4E4) repeat scroll 0 0 transparent;
     background: -webkit-linear-gradient(top , #FAFAFA, #E4E4E4) repeat scroll 0 0 transparent;
     padding-left: 0;
+    margin: 40px 0 0;
 }
 
 .pagehead > ul.tabs li {
