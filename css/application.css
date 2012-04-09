@@ -40,6 +40,7 @@ textarea {
     margin: 0;
     position: relative;
     z-index: 10;
+    padding-bottom: 50px;
 }
 
 .site-logo {
@@ -207,14 +208,17 @@ textarea {
 }
 
 .site {
-    padding: 20px 0 0;
+    /*padding: 20px 0 0; */
+    padding: 0;
     position: relative;
     width: 100%;
 }
 
 .pagehead {
     display: block;
-    margin: 0 0 20px;
+    /*margin: 0 0 20px;*/
+    margin: -60px 0 80px;
+    z-index: 100;
     position: relative;
 }
 
@@ -273,8 +277,8 @@ p.message.hidden {
     height: 34px;
     font-size: 12px;
     font-weight: bold;
-    border: 2px solid #eaeaea;
-    border-bottom-color: #cacaca;
+    border: 1px solid #cacaca;
+    border-bottom-width: 2px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
