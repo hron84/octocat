@@ -24,7 +24,7 @@ function octocat_preprocess_page(&$vars) {
 
   $picture = _octocat_get_user_picture($user);
 
-  if(isset($picture)) {
+  if(isset($picture) && $picture !== '/') {
     $alt = t("@user's picture", array('@user' => $user->name ? $user->name : variable_get('anonymous', t('Anonymous'))));
     $vars['user_picture'] = theme('image', $picture, $alt, $alt, array('width' => 20, 'height' => 20), FALSE);
   } 
